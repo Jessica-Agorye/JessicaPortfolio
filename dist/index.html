@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <nav class="border-2 w-full h-24 md:h-36 shadow-2xl shadow-slate-700 ">
+        
+        <div class="flex flex-row justify-between mt-6 mx-14 sm:mt-10 sm:mx-20 md:mt-8 md:mx-16  ">
+            <div class=" space-x-4">
+                <a href="" class="text-lg sm:text-2xl md:text-5xl"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="text-lg sm:text-2xl md:text-5xl"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="" class="text-lg sm:text-2xl md:text-5xl"><i class="fa-brands fa-square-instagram"></i></a>
+                <!-- Social media links -->
+            </div>
+            
+              
+            
+            <div class="flex">
+                
+                <!-- About Portfolio Contact -->
+                <ul class=" float-right md:flex md:flex-row md:space-x-6 md:text-2xl  md:mr-12  uppercase cursor-pointer hidden">
+                    
+                    <li class="  font-bold md:bg-black md:text-white md:px-3 md:py-2"><a href="">About Me</a></li>
+                    <li class=" font-medium pt-2"><a href=""> Projects</a></li>
+                    <li class=" pt-2"><a href="" class=" font-medium">Contact</a></li>
+
+                    
+                </ul>
+            </div>
+
+            <div class="menu-btn md:hidden flex items-center ">
+                <!-- mobile thing goes here -->
+               <button> <i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+
+        <div class="hidden md:hidden nav-menu text-center border-0">
+            <!-- Text that will show when we click the hamburger menu -->
+            <a href="" class="block py-2 px-4 text-sm bg-gray-300 uppercase hover:text-violet-600"> About Me</a>
+            <a href="" class="block py-2 px-4 text-sm bg-gray-300 uppercase hover:text-violet-600"> Project</a>
+            <a href="" class="block py-2 px-4 text-sm bg-gray-300  uppercase hover:text-violet-600"> Contact</a>
+        </div>
+    </nav>
+
+
+
+    <div class=" mt-20 w-full h-96  md:h-3/4  bg-black text-white shadow-2xl shadow-slate-700">
+        <p class="text-center text-6xl md:text-8xl ">J.A</p>
+        <div class="flex flex-row justify-around mt-10 md:justify-center md:space-x-4  lg:justify-center lg:space-x-8" >
+            <div class=" w-48 h-44 md:w-60 md:h-64 lg:w-72 lg:height-72">
+                <!-- Box contains two tabs, one visible the other hiden  -->
+                <div >
+                   <div class="space-x-2 md:space-x-4">
+                    <button class=" active font-semibold md:text-xl" id="about-me">About Me</button>
+                     <button class="active font-semibold md:text-xl cursor-pointer" id="edu">Education</button>
+                   </div>
+                  <div class=" text-sm  mt-8 md:text-xl">
+                    <p id="aboutme-text" >Technical writer and Web-developer with the skill required to create visually appealing and functional websites. </p>
+                    <ul class="hidden" id="edu-text">
+                        <li class="list-disc">HNAUB - BSC Computer Science</li>
+                        <li class="list-disc">Udemy Certification</li>
+                    </ul>
+                  </div>
+                </div>
+                
+            </div>
+
+            <div class=" w-52 h-52 md:w-64 md:h-72 md:mb-10  shadow-md shadow-red-200 ">
+                <!-- Contains rouded image -->
+                <img src="/src/img/jess2.png" alt="" class="w-52 h-52 md:w-72 md:h-72 object-cover hover:transform translate-x-4 translate-y-4  ">
+            </div>
+        </div>
+ 
+    </div>
+
+    <div class=" mt-20 px-4 pt-4 md:w-4/5 h-full bg-black text-white shadow-2xl shadow-slate-700 mx-auto overflow-hidden">
+        <p class="text-2xl font-bold">Projects...</p>
+
+       <div class=" grid grid-cols-2 gap-2 mt-10 mb-10 ">
+        <div class="bg-red-400 w-50 h-72 lg:h-96 ">
+            <img src="/src/img/Screenshot (607).png" alt="" class="object-cover">
+            <button class="mt-4 ml-2 border border-black px-4 py-2 bg-black text-xs font-bold"><a href="/">Astro Sound</a></button>
+            <p class="ml-2">Astro sound is a music streaming platform</p>
+         </div> 
+    <div class="bg-blue-400 w-50 h-72 w-50 lg:h-96">
+            <img src="/src/img/Screenshot (616).png" alt="">
+            <button  class="mt-2 ml-2 border border-black px-4 py-2 bg-black text-xs font-bold"><a href="https://louisaperfumery.netlify.app/">Le Perfumerie</a></button>
+            <p class="ml-2">Le perfumerie is a perfume store</p>
+    </div>
+    <div class="bg-green-400 w-50 h-72 lg:h-96">
+        <img src="/src/img/Screenshot (618).png" alt="">
+        <button class="mt-4 ml-2 border border-black px-4 py-2 bg-black text-xs font-bold"><a href="https://aceeduconsult.netlify.app/">ACE Consult</a></button>
+        <p class="ml-2">Ace is a travel and study consultancy</p>
+    </div>
+    <div class="bg-yellow-400 w-50 h-72 lg:h-96">
+        <img src="/src/img/Screenshot (619).png" alt="">
+        <button class="mt-4 ml-2 border border-black px-4 py-2 bg-black text-xs font-bold"><a href="https://jua-calculator.netlify.app/">Calculator</a></button>
+        <p class="ml-2">A calculator to solve numerical values</p>
+    </div>
+   
+
+       </div>
+            
+     </div>
+
+    
+    </div>
+
+    <footer>
+        <div class="contact gap-2 grid grid-cols-2 mt-40 px-20 h-full bg-black text-white ">
+            <div class="mt-8  md:text-xl ">
+                <div class="leading-loose space-y-4">
+                <p class="text-2xl md:text-3xl">Contact Me:</p>
+                <p class="text-xs md:text-lg"> <i class="fa-solid fa-paper-plane text-xs sm:text-sm md:text-lg"></i> agoryyejessica1@gmail.com</p>
+                <p class="text-xs md:text-lg"> <i class="fa-solid fa-address-book text-xs sm:text-sm md:text-lg"></i> (+234)- 9063885307</p>
+                </div>
+                <div class="mt-4 space-x-4">
+                    <a href="" class="text-lg sm:text-2xl md:text-5xl"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="text-lg sm:text-2xl md:text-5xl"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="" class="text-lg sm:text-2xl md:text-5xl"><i class="fa-brands fa-square-instagram"></i></a>
+                    <!-- Social media links -->
+                </div>
+
+                <a href="/src/img/AgoryeJessica.pdf" download>
+                    <button class="px-4 py-3 sm:px-8 sm:py-6 bg-indigo-400 text-white mt-10">Download CV</button>
+                </a>
+               
+            </div>
+
+            <div class="inline-grid mt-8">
+               <form action="" name="submit-to-google-sheet" id="forms">
+                <input type="text" name="Name" placeholder=" Name" class="w-6/6 h-16 sm:w-3/4 sm:h-16 border-2 pl-4 rounded-md focus:bg-slate-100 text-black">
+                <input type="text" name ="Email" placeholder=" Email" class="w-6/6 h-16 sm:w-3/4 sm:h-16 border-2 mt-10 pl-4 rounded-md focus:bg-slate-100 text-black">
+                <input type="text" name="Message" placeholder =" Message" class="w-6/6 h-40 sm:w-3/4 sm:h-40 border-2 mt-10 pl-4 rounded-md focus:bg-slate-100 text-black">
+             
+               <div>
+                <button class="px-4 py-3 sm:px-8 sm:py-6 bg-indigo-400 text-white mt-10 mb-4">Submit</button>
+               </div>
+               </form>
+               <span id="msg-span" class="text-white mb-10"> </span>
+            </div>
+    </div>
+
+
+    
+    </footer>
+    
+
+    <script src="/src/index.js"></script>
+  </body>
+</html>
