@@ -1,5 +1,9 @@
 let menuBtn = document.querySelector(".menu-btn");
 let navMenu = document.querySelector(".nav-menu");
+let educationEl = document.querySelector("#edu");
+let aboutEl = document.querySelector("#about-me");
+let eduText = document.querySelector("#edu-text");
+let aboutText = document.querySelector("#aboutme-text");
 
 menuBtn.addEventListener(
   "click",
@@ -8,14 +12,8 @@ menuBtn.addEventListener(
   })
 );
 
-let educationEl = document.querySelector("#edu");
-let aboutEl = document.querySelector("#about-me");
-let eduText = document.querySelector("#edu-text");
-let aboutText = document.querySelector("#aboutme-text");
+aboutEl.style.borderBottom = "solid 4px #FF00FF";
 
-aboutEl.style.borderBottom = "solid 4px blue";
-
-// When I click on educationEl I want aboutMe to be hidden and I want educationText  to be revealed.
 educationEl.addEventListener("click", function () {
   aboutText.classList.add("hidden");
   eduText.classList.remove("hidden");
@@ -23,9 +21,9 @@ educationEl.addEventListener("click", function () {
 
   educationEl.classList.add("active");
   aboutEl.classList.remove("active");
-  educationEl.style.borderBottom = "solid 4px blue";
+  educationEl.style.borderBottom = "solid 4px #FF00FF";
 });
-// Also I want the style (border bottom to become fuchia, also I want the style of about me to become hidden)
+
 aboutEl.addEventListener("click", function () {
   aboutText.classList.remove("hidden");
   eduText.classList.add("hidden");
@@ -33,7 +31,7 @@ aboutEl.addEventListener("click", function () {
 
   educationEl.classList.remove("active");
   aboutEl.classList.add("active");
-  aboutEl.style.borderBottom = "solid 4px blue";
+  aboutEl.style.borderBottom = "solid 4px #FF00FF";
 });
 
 // Form Script for form data to google sheet

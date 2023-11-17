@@ -608,10 +608,6 @@ video {
   margin-top: 1rem;
 }
 
-.mt-40 {
-  margin-top: 10rem;
-}
-
 .mt-48 {
   margin-top: 12rem;
 }
@@ -626,10 +622,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.-mt-80 {
-  margin-top: -20rem;
 }
 
 .mt-80 {
@@ -860,10 +852,6 @@ video {
 
 .border-2 {
   border-width: 2px;
-}
-
-.border-4 {
-  border-width: 4px;
 }
 
 .border-8 {
