@@ -12,7 +12,7 @@ menuBtn.addEventListener(
   })
 );
 
-aboutEl.style.borderBottom = "solid 4px #FF00FF";
+aboutEl.style.borderBottom = "solid 6px #FF00FF";
 
 educationEl.addEventListener("click", function () {
   aboutText.classList.add("hidden");
@@ -21,7 +21,7 @@ educationEl.addEventListener("click", function () {
 
   educationEl.classList.add("active");
   aboutEl.classList.remove("active");
-  educationEl.style.borderBottom = "solid 4px #FF00FF";
+  educationEl.style.borderBottom = "solid 6px #FF00FF";
 });
 
 aboutEl.addEventListener("click", function () {
@@ -31,7 +31,7 @@ aboutEl.addEventListener("click", function () {
 
   educationEl.classList.remove("active");
   aboutEl.classList.add("active");
-  aboutEl.style.borderBottom = "solid 4px #FF00FF";
+  aboutEl.style.borderBottom = "solid 6px #FF00FF";
 });
 
 // Form Script for form data to google sheet
