@@ -8,8 +8,11 @@
 
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body>
-    <nav class="border-2 w-full h-24 md:h-36 shadow-2xl shadow-slate-700 ">
+  <body class="overflow-y-scroll no-scrollbar">
+     
+        
+    <nav class="border-2 h-28 md:h-26 shadow
+    -2xl shadow-slate-600 ">
         
         <div class="flex flex-row justify-between mt-6 mx-14 sm:mt-10 sm:mx-20 md:mt-8 md:mx-16  ">
             <div class=" space-x-4">
@@ -19,12 +22,10 @@
                 <!-- Social media links -->
             </div>
             
-              
-            
-            <div class="flex">
+            <div class="flex ">
                 
                 <!-- About Portfolio Contact -->
-                <ul class=" float-right md:flex md:flex-row md:space-x-6 md:text-2xl  md:mr-12  uppercase cursor-pointer hidden">
+                <ul class=" float-right md:flex md:flex-row md:space-x-6 md:text-1xl  md:mr-12  uppercase cursor-pointer hidden">
                     
                     <li class="  font-bold md:bg-black md:text-white md:px-3 md:py-2"><a href="">About Me</a></li>
                     <li class=" font-medium pt-2"><a href=""> Projects</a></li>
@@ -40,7 +41,7 @@
             </div>
         </div>
 
-        <div class="hidden md:hidden nav-menu text-center border-0">
+        <div class="hidden md:hidden nav-menu text-center border-0 ">
             <!-- Text that will show when we click the hamburger menu -->
             <a href="" class="block py-2 px-4 text-sm bg-gray-300 uppercase hover:text-violet-600"> About Me</a>
             <a href="" class="block py-2 px-4 text-sm bg-gray-300 uppercase hover:text-violet-600"> Project</a>
@@ -50,8 +51,8 @@
 
 
 
-    <div class=" mt-20 w-full h-96  md:h-3/4  bg-black text-white shadow-2xl shadow-slate-700">
-        <p class="text-center text-6xl md:text-8xl ">J.A</p>
+    <div class=" mt-36 w-full h-96  md:h-3/4  bg-black text-white shadow-2xl shadow-slate-700">
+        <p class="text-center text-6xl md:text-8xl animate-bounce ">J.A</p>
         <div class="flex flex-row justify-around mt-10 md:justify-center md:space-x-4  lg:justify-center lg:space-x-8" >
             <div class=" w-48 h-44 md:w-60 md:h-64 lg:w-72 lg:height-72">
                 <!-- Box contains two tabs, one visible the other hiden  -->
@@ -61,8 +62,8 @@
                      <button class="active font-semibold md:text-xl cursor-pointer" id="edu">Education</button>
                    </div>
                   <div class=" text-sm  mt-8 md:text-xl">
-                    <p id="aboutme-text" >Technical writer and Web-developer with the skill required to create visually appealing and functional websites. </p>
-                    <ul class="hidden" id="edu-text">
+                    <p id="aboutme-text" class="leading-10" >Technical writer and Web-developer with the skill required to create visually appealing and functional websites. </p>
+                    <ul class="hidden leading-10" id="edu-text">
                         <li class="list-disc">HNAUB - BSC Computer Science</li>
                         <li class="list-disc">Udemy Certification</li>
                     </ul>
@@ -78,42 +79,164 @@
         </div>
  
     </div>
+    <div class=" flex mt-36 px-4 pt-4 md:w-4/5 h-full text-black shadow-2xl shadow-slate-700 mx-auto overflow-hidden ">
 
-    <div class=" mt-20 px-4 pt-4 md:w-4/5 h-full bg-black text-white shadow-2xl shadow-slate-700 mx-auto overflow-hidden">
-        <p class="text-2xl font-bold">Projects...</p>
-
-       <div class=" grid grid-cols-2 gap-2 mt-10 mb-10 ">
-        <div class="bg-red-400 w-50 h-72 lg:h-96 ">
-            <img src="./img/Screenshot (607).png" alt="" class="object-cover">
-            <button class="mt-4 ml-2 border border-black px-4 py-2 bg-black text-xs font-bold"><a href="/">Astro Sound</a></button>
-            <p class="ml-2">Astro sound is a music streaming platform</p>
-         </div> 
-    <div class="bg-blue-400 w-50 h-72 w-50 lg:h-96">
-            <img src="./img/Screenshot (616).png" alt="">
-            <button  class="mt-2 ml-2 border border-black px-4 py-2 bg-black text-xs font-bold"><a href="https://louisaperfumery.netlify.app/">Le Perfumerie</a></button>
-            <p class="ml-2">Le perfumerie is a perfume store</p>
-    </div>
-    <div class="bg-green-400 w-50 h-72 lg:h-96">
-        <img src="./img/Screenshot (618).png" alt="">
-        <button class="mt-4 ml-2 border border-black px-4 py-2 bg-black text-xs font-bold"><a href="https://aceeduconsult.netlify.app/">ACE Consult</a></button>
-        <p class="ml-2">Ace is a travel and study consultancy</p>
-    </div>
-    <div class="bg-yellow-400 w-50 h-72 lg:h-96">
-        <img src="./img/Screenshot (619).png" alt="">
-        <button class="mt-4 ml-2 border border-black px-4 py-2 bg-black text-xs font-bold"><a href="https://jua-calculator.netlify.app/">Calculator</a></button>
-        <p class="ml-2">A calculator to solve numerical values</p>
-    </div>
-   
-
-       </div>
+        <div class=" w-1/2 h-96 ml-20 book-shape">
             
-     </div>
+        
+                <p class="mt-2 text-4xl font-bold animate-pulse">Technical Writer</p>
+        
+                <ul class="list-disc space-y-12 mt-8 ml-7">
+
+                    <li> Over 5 years writing experience</li>
+                    <li> Over 19 published technical articles</li>
+                    <li> Over .. yeah yeah you get it. Just click the link!  </li>
+                    <!-- ... -->
+                  </ul>
+
+                  <button class="mt-8  bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Blog</button>
+                  <button class="mt-8 bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Other Published Work</button>
+                
+
+
+          
+
+           
+        </div>
+
+        <div class=" w-1/2 h-96 ml-20 book-shape1">
+            
+        
+            <p class="mt-2 text-4xl font-bold animate-pulse">Technical Writer</p>
+    
+            <ul class="list-disc space-y-12 mt-8 ml-7">
+
+                <li> Over 5 years writing experience</li>
+                <li> Over 19 published technical articles</li>
+                <li> Over .. yeah yeah you get it. Just click the link!  </li>
+                <!-- ... -->
+              </ul>
+
+              <button class="mt-8  bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Blog</button>
+              <button class="mt-8 bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Other Published Work</button>
+            
+
+
+      
+
+       
+    </div>
+        
+    </div>
+
+    <div class=" mt-36 px-4 pt-4 md:w-4/5 h-full bg-black text-white shadow-2xl shadow-slate-700 mx-auto overflow-hidden border-8 border-black ">
+
+        <div class="flex  w-full  h-96">
+            <div class=" mt-5   w-1/2" >
+                <p class="text-xl"> About Me</p>
+                <p class="hidden " id="fade-in-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut minima amet sequi, fuga voluptates! Ullam obcaecati corrupti esse eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore obcaecati nostrum maxime nisi exercitationem sit debitis, illo incidunt natus? </p>
+
+            </div>
+
+            <div class="w-1/2">
+
+               <div class="mt-10">
+                <p class=" flex justify-center text-center items-center">Lorem ipsum dolor sit amet consectetur, . Lorem ipsum dolor sit amet. </p>
+                <p class=" flex justify-center text-center items-center">Lorem ipsum dolor sit amet consectetur, . Lorem ipsum dolor sit amet. </p>
+                <p class=" flex justify-center text-center items-center">Lorem ipsum dolor sit amet consectetur, . Lorem ipsum dolor sit amet. </p>
+               </div>
+
+                <div class=" ml-96 mt-48 w-40 h-20 rounded-t-full bg-white flex justify-center text-center items-center ">
+                    <p class="text-black font-bold  ">About Me </p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+   
+    <div class="mt-36 px-8 pt-4 pb-8 md:w-4/5 h-full bg-black text-white shadow-2xl shadow-slate-700 mx-auto overflow-hidden">
+        <div class="w-40 ml-16 h-20 rounded-b-full bg-white flex justify-center text-center items-center">
+            <p class="text-black font-bold">Projects</p>
+        </div>
+    
+        <div class="flex items-center space-x-8 mt-6  ">
+    
+            <div class="bg-black w-1/2 h-72 lg:h-96  space-y-2 box-3d">
+                <img src="./img/Screenshot (607).png" alt="" class="object-cover h-60 mx-auto">
+                <button class="border border-black px-4 py-2 ml-8 bg-white text-black text-xs font-bold"><a href="/">Astro Sound</a></button>
+                <p class=" ml-8">Astro sound is a music streaming platform</p>
+            </div>
+    
+            <div class="bg-black w-1/2 h-72 lg:h-96  space-y-2 box-3d">
+                <img src="./img/Screenshot (616).png" alt="" class="object-cover h-60 mx-auto">
+                <button class="border border-black px-4 py-2 ml-11 bg-white text-black text-xs font-bold"><a href="https://louisaperfumery.netlify.app/">Le Perfumerie</a></button>
+                <p class=" ml-11">Le perfumerie is a perfume store</p>
+            </div>
+    
+        </div>
+    
+        <div class="flex items-center space-x-8 mt-4 ">
+            <div class="bg-black w-1/2 h-72 lg:h-96  space-y-2 box-3d">
+                <img src="./img/Screenshot (618).png" alt="" class="object-cover h-60 mx-auto">
+                <button class="border border-black px-4 py-2 ml-11 bg-white text-black text-xs font-bold"><a href="https://aceeduconsult.netlify.app/">ACE Consult</a></button>
+                <p class=" ml-11">Ace is a travel and study consultancy</p>
+            </div>
+            <div class="bg-black w-1/2 h-72 lg:h-96  space-y-2 box-3d ">
+                <img src="./img/Screenshot (619).png" alt="" class="object-cover h-60 mx-auto">
+                <button class="border border-black px-4 py-2 ml-9 bg-white text-black text-xs font-bold"><a href="https://jua-calculator.netlify.app/">Calculator</a></button>
+                <p class=" ml-9">A calculator to solve numerical values</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
 
     
     </div>
 
+   
+
+    <div class=" flex mt-36 px-4 pt-4 md:w-4/5 h-full text-black shadow-2xl shadow-slate-700 mx-auto overflow-hidden ">
+
+        <div class=" w-1/2 h-96 ml-20">
+            
+        
+                <p class="mt-2 text-4xl font-bold animate-pulse">Technical Writer</p>
+        
+                <ul class="list-disc space-y-12 mt-8 ml-7">
+
+                    <li> Over 5 years writing experience</li>
+                    <li> Over 19 published technical articles</li>
+                    <li> Over .. yeah yeah you get it. Just click the link!  </li>
+                    <!-- ... -->
+                  </ul>
+
+                  <button class="mt-8  bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Blog</button>
+                  <button class="mt-8 bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Other Published Work</button>
+                
+
+
+          
+
+           
+        </div>
+
+        <div class="w-1/2 mb-2 h-96">
+            <img src="/dist/img/rishabh-sharma-R-js25Pv1LQ-unsplash.jpg" alt="" class="object-cover h-96 w-full">
+        </div>
+        
+    </div>
+
+   
+
+
+  
+
     <footer>
-        <div class="contact gap-2 grid grid-cols-2 mt-40 px-20 h-full bg-black text-white ">
+        <div class="contact gap-2 grid grid-cols-2 mt-80  px-20 h-full bg-black text-white ">
             <div class="mt-8  md:text-xl ">
                 <div class="leading-loose space-y-4">
                 <p class="text-2xl md:text-3xl">Contact Me:</p>
@@ -128,7 +251,7 @@
                 </div>
 
                 <a href="./img/AgoryeJessica.pdf" download>
-                    <button class="px-4 py-3 sm:px-8 sm:py-6 bg-indigo-400 text-white mt-10">Download CV</button>
+                    <button class="px-4 py-3 sm:px-8 sm:py-6 bg-white text-black mt-10">Download CV</button>
                 </a>
                
             </div>
@@ -140,7 +263,7 @@
                 <input type="text" name="Message" placeholder =" Message" class="w-6/6 h-40 sm:w-3/4 sm:h-40 border-2 mt-10 pl-4 rounded-md focus:bg-slate-100 text-black">
              
                <div>
-                <button class="px-4 py-3 sm:px-8 sm:py-6 bg-indigo-400 text-white mt-10 mb-4">Submit</button>
+                <button class="px-4 py-3 sm:px-8 sm:py-6 bg-white text-black mt-10 mb-4">Submit</button>
                </div>
                </form>
                <span id="msg-span" class="text-white mb-10"> </span>
@@ -151,6 +274,7 @@
     
     </footer>
     
+  
 
     <script src="/src/index.js"></script>
   </body>
