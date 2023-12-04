@@ -27,7 +27,7 @@
 }
 
 .box-3d {
-  transform: perspective(1000px) rotateX(-15deg) rotateY(15deg);
+  transform: perspective(1000px) rotateX(-5deg) rotateY(15deg);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
