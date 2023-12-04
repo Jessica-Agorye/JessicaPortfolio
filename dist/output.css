@@ -1045,15 +1045,6 @@ video {
   /* Firefox */
 }
 
-#fade-in-text {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-.visible {
-  opacity: 1;
-}
-
 .box-3d {
   transform: perspective(1000px) rotateX(-5deg) rotateY(15deg);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
